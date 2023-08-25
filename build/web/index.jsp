@@ -44,7 +44,7 @@
                             <th scope="col">Edad</th>
                             <th scope="col">Correo</th>
                             <th scope="col" class="text-center">
-                                <a href="crear.jsp"><i class="fa-solid fa-user-plus" style="color: #010204;"></i></a>
+                                <a href="crear.jsp"><i class="fa-solid fa-user-plus" style="color: #0d47ab;"></i></a>
                             </th>
                         </tr>
                     </thead>
@@ -64,9 +64,9 @@
                             <td><%= rs.getInt("edad")%></td>
                             <td><%= rs.getString("correo")%></td>
                             <td class="text-center">
-                                <a href="editar.jsp?id=<%= rs.getString(1)%>&nombre=<%= rs.getString(2)%>&apellido=<%= rs.getString(3)%>&edad=<%= rs.getString(4)%>&correo=<%= rs.getString(5)%>"<i class="fa fa-user-edit" style="color: #010204;"></i></a>
+                                <a href="editar.jsp?id=<%= rs.getString("id")%>&nombre=<%= rs.getString("nombre")%>&apellido=<%= rs.getString("apellido")%>&edad=<%= rs.getString("edad")%>&correo=<%= rs.getString("correo")%>"<i class="fa fa-user-edit" style="color: #0d47ab;"></i></a>
                                 &nbsp;&nbsp;
-                                <a href="borrar.jsp?id_usuario=<%= rs.getString(1)%>"><i class="fa-solid fa-user-minus" style="color: #010204;"></i></a>
+                                <a href="borrar.jsp?id_usuario=<%= rs.getString("id")%>"><i class="fa-solid fa-user-minus" style="color: #0d47ab;"></i></a>
                             </td>
                         </tr>
                         <% }
